@@ -30,7 +30,7 @@ const Menu = styled.nav`
   padding: 8px;
   box-sizing: border-box;
   border-bottom: 3px solid ${(props) => props.theme.secondaryColor};
-  background: white;
+  background: ${(props) => props.theme.bodyBackgroundColor};
 
   @media (min-width: 768px) {
     display: flex;
@@ -52,7 +52,7 @@ const MobileMenuIcon = styled.div`
 
   > div {
     height: 3px;
-    background: black;
+    background: ${(props) => props.theme.bodyFontColor};
     margin: 5px 0;
     width: 100%;
   }
@@ -74,7 +74,7 @@ const StyledLink = styled(Link)`
   margin: auto 0;
 
   font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
-  color: black;
+  color: ${(props) => props.theme.bodyFontColor};
 `;
 
 export function Header() {
