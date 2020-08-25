@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import ProTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const largeStyles = ({ large }) => {
   if (large) {
@@ -35,7 +35,7 @@ const Button = styled.button`
   }
 `;
 
-Button.proptypes = {
+Button.propTypes = {
   large: PropTypes.bool,
   secondary: PropTypes.bool,
 };
